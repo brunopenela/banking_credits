@@ -142,7 +142,8 @@ view: loan_defaulter_staging {
 
   dimension: years_birth{
     type: number
-    sql: ${TABLE}.DAYS_BIRTH/365 ;;
+    sql: ${TABLE}.DAYS_BIRTH/(-365)
+    value_format: "0";;
   }
 
   dimension: days_employed {
