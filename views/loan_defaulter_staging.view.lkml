@@ -643,6 +643,11 @@ view: loan_defaulter_staging {
     sql: ${TABLE}.YEARS_BUILD_MODE ;;
   }
 
+  dimension: AGE {
+    type: number
+    sql: ${TABLE}.AGE ;;
+  }
+
   measure: count {
     type: count
     drill_fields: []
