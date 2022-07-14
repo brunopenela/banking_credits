@@ -233,7 +233,7 @@ view: loan_defaulter_staging {
   }
 
   dimension: flag_document_10 {
-    type: number
+    type: string
     sql: ${TABLE}.FLAG_DOCUMENT_10 ;;
   }
 
